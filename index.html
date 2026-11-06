@@ -1,121 +1,403 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport"
-    content="width=device-width, initial-scale=1.0">
-
-    <title>Home & Gardening | Home Decor, Gardening Tips & Plant Care</title>
-
-    <meta name="description" content="Discover beautiful home decor ideas, easy gardening tips, indoor plant care guides, and simple ways to create a beautiful home.">
+    <title>Home & Gardening | Fresh Ideas for a Beautiful Home</title>
+    <meta name="description" content="Explore practical gardening tips, indoor plant care, home decor inspiration and simple ideas for greener living.">
 
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
 
-    <header>
-        <h1>Home & Gardening</h1>
+<header class="site-header">
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="blog.html">Blog</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+    <a class="brand" href="index.html">
+        <span class="brand-mark">✿</span>
+        <span>Home <em>&</em> Gardening
+            <small>GROW • DECORATE • ENJOY</small>
+        </span>
+    </a>
 
-    <main>
+    <button class="menu-toggle" aria-label="Toggle navigation"
+        onclick="document.querySelector('.main-nav').classList.toggle('open')">
+        ☰
+    </button>
 
-        <section class="hero">
+    <nav class="main-nav">
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gardening-tips.html">Gardening Tips</a>
+        <a href="home-decor.html">Home Decor</a>
+        <a href="plant-care.html">Plant Care</a>
+        <a href="blog.html">Blog</a>
+        <a class="nav-contact" href="contact.html">Contact Us</a>
 
-            <h2>Welcome to Home & Gardening</h2>
+        <form class="header-search" onsubmit="searchHome(event)">
+            <input type="search" id="homeSearch"
+                placeholder="Search articles..." aria-label="Search articles">
+            <button type="submit" aria-label="Search">⌕</button>
+        </form>
+    </nav>
+
+</header>
+
+<main>
+
+    <section class="hero-home">
+
+        <div class="hero-shade"></div>
+
+        <div class="hero-copy">
+
+            <span class="eyebrow">WELCOME TO HOME & GARDENING</span>
+
+            <h1>Make Your Home<br><i>Bloom Beautifully</i></h1>
 
             <p>
-                Discover beautiful home decor ideas,
-                gardening tips and plant care guides.
+                Fresh gardening advice, thoughtful home decor and easy
+                plant-care ideas to help you create a space you love.
             </p>
 
-            <a href="blog.html">Explore Our Blog</a>
+            <a class="btn-primary" href="blog.html">
+                Explore Our Articles <span>→</span>
+            </a>
 
-        </section>
+        </div>
 
-        <section class="categories">
+        <div class="hero-note">
+            <span>01 / 03</span>
+            <b>Bring nature a little closer</b>
+        </div>
 
+    </section>
+   
+    <section class="intro-row">
+
+        <div>
+            <span class="eyebrow green">A LITTLE INSPIRATION FOR EVERY DAY</span>
+            <h2>Find your green<br>corner of happiness.</h2>
+        </div>
+
+        <p>
+            Whether you have a sunny balcony, a cozy living room or just
+            one little plant, discover simple ways to make your home
+            greener and more beautiful.
+        </p>
+
+    </section>
+
+<section class="category-section section-wrap">
+
+    <div class="section-heading">
+        <div>
+            <span class="eyebrow green">EXPLORE OUR WORLD</span>
             <h2>Our Categories</h2>
+        </div>
 
-            <div class="category">
+        <a class="text-link" href="blog.html">View all articles →</a>
+    </div>
 
-                <h3>Gardening Tips</h3>
-                <p>Learn useful gardening tips for beginners.</p>
+    <div class="category-grid">
+
+        <div class="category-card">
+            <img src="images/vegetable-garden.jpg"
+                 alt="Beautiful home garden">
+
+            <div class="category-info">
+                <h3>🌿 Garden Care</h3>
+                <p>Grow a beautiful and healthy garden.</p>
+                <a href="gardening-tips.html" class="read-more">Read More</a>
+            </div>
+        </div>
+    
+        <div class="category-card">
+            <img src="images/home decore and plants.jpg"
+                 alt="Beautiful home decor with plants">
+
+            <div class="category-info">
+                <h3>🏡 Home Decor</h3>
+                <p>Make your home fresh and beautiful.</p>
+                <a href="home-decor.html" class="read-more">Read More</a>
+            </div>
+        </div>
+    
+        <div class="category-card">
+            <img src="images/indoor-plants.jpg"
+                 alt="Healthy indoor plants">
+
+            <div class="category-info">
+                <h3>🪴 Plant Care</h3>
+                <p>Learn how to keep your plants healthy.</p>
+                <a href="plant-care.html" class="read-more">Read More</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+    <section class="featured-section">
+
+        <div class="section-wrap">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="eyebrow green">READ • LEARN • GROW</span>
+                    <h2>Featured Articles</h2>
+                </div>
+
+                <a class="text-link" href="blog.html">See all stories →</a>
 
             </div>
 
-            <div class="category">
 
-                <h3>Home Decor</h3>
-                <p>Discover beautiful ideas to decorate your home.</p>
+            <div class="article-grid">
+               
+                <article class="feature-card">
+
+                    <a href="articles/article1.html">
+                        <img src="images/balcony-garden.jpg"
+                            alt="Small balcony garden">
+                    </a>
+
+                    <div class="feature-body">
+
+                        <span class="tag">GARDENING</span>
+
+                        <h3>
+                            <a href="articles/article1.html">
+                                How to Create a Small Balcony Garden
+                            </a>
+                        </h3>
+
+                        <p>
+                            Turn even a small balcony into a peaceful green
+                            corner with a few thoughtful choices.
+                        </p>
+
+                        <a class="read-link" href="articles/article1.html">
+                            Read Article →
+                        </a>
+
+                    </div>
+
+                </article>            
+                <article class="feature-card">
+
+                    <a href="articles/article2.html">
+                        <img src="images/indoor-plants.jpg"
+                            alt="Indoor plants in a bright room">
+                    </a>
+
+                    <div class="feature-body">
+
+                        <span class="tag">PLANT CARE</span>
+
+                        <h3>
+                            <a href="articles/article2.html">
+                                4 Easy Plants for Beginners
+                            </a>
+                        </h3>
+
+                        <p>
+                            Start your plant journey with easy-care greenery
+                            and simple routines.
+                        </p>
+
+                        <a class="read-link" href="articles/article2.html">
+                            Read Article →
+                        </a>
+
+                    </div>
+
+                </article>               
+                <article class="feature-card">
+
+                    <a href="articles/article3.html">
+                        <img src="images/home decore and plants.jpg"
+                            alt="Natural home decor with plants">
+                    </a>
+
+                    <div class="feature-body">
+
+                        <span class="tag">HOME DECOR</span>
+
+                        <h3>
+                            <a href="articles/article3.html">
+                                Easy Ways to Decorate Your Home with Plants
+                            </a>
+                        </h3>
+
+                        <p>
+                            Add warmth and natural beauty to your rooms
+                            with greenery.
+                        </p>
+
+                        <a class="read-link" href="articles/article3.html">
+                            Read Article →
+                        </a>
+
+                    </div>
+
+                </article>        
+                <article class="feature-card">
+
+                    <a href="articles/article4.html">
+                        <img src="images/vegetable-garden.jpg"
+                            alt="Healthy vegetables growing in a garden">
+                    </a>
+
+                    <div class="feature-body">
+
+                        <span class="tag">VEGETABLE GARDENING</span>
+
+                        <h3>
+                            <a href="articles/article4.html">
+                                How to Grow Healthy Vegetables at Home
+                            </a>
+                        </h3>
+
+                        <p>
+                            Learn simple ways to grow fresh and healthy
+                            vegetables at home.
+                        </p>
+
+                        <a class="read-link" href="articles/article4.html">
+                            Read Article →
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <article class="feature-card">
+
+                    <a href="articles/article5.html">
+                        <img src="images/seasonal-gardening.jpg"
+                            alt="Beautiful garden with seasonal plants">
+                    </a>
+
+                    <div class="feature-body">
+
+                        <span class="tag">GARDENING TIPS</span>
+
+                        <h3>
+                            <a href="articles/article5.html">
+                                Simple Gardening Tips for Every Season
+                            </a>
+                        </h3>
+
+                        <p>
+                            Discover easy seasonal gardening tips to keep
+                            your plants healthy throughout the year.
+                        </p>
+
+                        <a class="read-link" href="articles/article5.html">
+                            Read Article →
+                        </a>
+
+                    </div>
+
+                </article>
 
             </div>
 
-            <div class="category">
+        </div>
 
-                <h3>Plant Care</h3>
-                <p>Learn how to take care of indoor plants.</p>
+    </section>
+    <section class="quote-band">
 
+        <span>“</span>
+
+        <p>A home feels more alive when a little nature grows in it.</p>
+
+        <small>HOME & GARDENING</small>
+
+    </section>
+
+</main>
+<footer class="site-footer">
+
+    <div class="footer-main">
+
+        <div class="footer-about">
+
+            <a class="brand footer-brand" href="index.html">
+
+                <span class="brand-mark">✿</span>
+
+                <span>Home <em>&</em> Gardening
+                    <small>GROW • DECORATE • ENJOY</small>
+                </span>
+
+            </a>
+
+            <p>
+                Inspiring greener spaces and more beautiful homes
+                with practical ideas anyone can enjoy.
+            </p>
+
+            <div class="social-links">
+                <a href="https://www.facebook.com/" aria-label="Facebook">f</a>
+                <a href="https://www.instagram.com/" aria-label="Instagram">◎</a>
+                <a href="https://www.pinterest.com/" aria-label="Pinterest">p</a>
             </div>
 
-        </section>
+        </div>
 
-        <section class="featured">
 
-            <h2>Featured Articles</h2>
+        <div class="footer-column">
 
-            <div class="article">
+            <h3>Explore</h3>
 
-                <h3>Gardening Tips for Beginners</h3>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="blog.html">Our Blog</a>
+            <a href="contact.html">Contact Us</a>
 
-                <p>Learn simple ways to start your own garden.</p>
+        </div>
 
-                <a href="blog.html">Read More</a>
 
-            </div>
+        <div class="footer-column">
 
-            <div class="article">
+            <h3>Categories</h3>
 
-                <h3>Beautiful Home Decor Ideas</h3>
+            <a href="gardening-tips.html">Gardening Tips</a>
+            <a href="home-decor.html">Home Decor</a>
+            <a href="plant-care.html">Plant Care</a>
+            <a href="articles/article4.html">Vegetable Gardening</a>
 
-                <p>Make your home beautiful with creative ideas.</p>
+        </div>
 
-                <a href="blog.html">Read More</a>
 
-            </div>
+        <div class="footer-column">
 
-            <div class="article">
+            <h3>Helpful Links</h3>
 
-                <h3>Indoor Plant Care Guide</h3>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+            <a href="sitemap.xml">Sitemap</a>
 
-                <p>Learn how to keep your indoor plants healthy.</p>
+        </div>
 
-                <a href="blog.html">Read More</a>
+    </div>
 
-            </div>
 
-        </section>
+    <div class="footer-bottom">
 
-    </main>
+        <span>© 2026 Home & Gardening. All Rights Reserved.</span>
 
-    <footer>
+        <span>Made with care for greener living <b>✿</b></span>
 
-        <p>&copy; 2026 Home & Gardening</p>
-        <p>All Rights Reserved.</p>
+    </div>
 
-    </footer>
+</footer>
+<script src="js/script.js"></script>
 
 </body>
-
 </html>

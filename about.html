@@ -11,59 +11,96 @@
     <meta name="description" content="Learn about Home & Gardening and our mission to share helpful gardening tips, beautiful home decor ideas, and useful plant care guides.">
 
     <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .about-hero {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+            url("images/home decore and plants.jpg") center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            padding: 50px 8%;
+            flex-wrap: wrap;
+        }
+
+        .about-content img {
+            width: 100%;
+            max-width: 450px;
+            border-radius: 10px;
+        }
+
+        .about-text {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .about-text h2 {
+            margin-bottom: 15px;
+        }
+
+        .mission {
+            text-align: center;
+            padding: 45px 8%;
+            background: #eef3e9;
+        }
+
+        .mission h2 {
+            margin-bottom: 15px;
+        }
+    </style>
 </head>
 
 <body>
-
-<header>
-
-    <h1>Home & Gardening</h1>
-
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-
-</header>
+<header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">✿</span><span>Home <em>&</em> Gardening<small>GROW • DECORATE • ENJOY</small></span></a><button class="menu-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.main-nav').classList.toggle('open')">☰</button><nav class="main-nav"><a href="index.html">Home</a><a href="about.html">About</a><a href="gardening-tips.html">Gardening Tips</a><a href="home-decor.html">Home Decor</a><a href="plant-care.html">Plant Care</a><a href="blog.html">Blog</a><a class="nav-contact" href="contact.html">Contact Us</a></nav></header>
 
 <main>
 
-    <section class="about">
+    <section class="about-hero">
+        <h2>About Home & Gardening</h2>
+        <p>Helping You Create Beautiful Homes and Green Spaces</p>
+    </section>
 
-        <h2>About Us</h2>
+    <section class="about-content">
 
-        <p>
-            Welcome to Home & Gardening!
-            We share helpful gardening tips,
-            beautiful home decor ideas and
-            useful plant care guides.
-        </p>
+        <img src="images/home decore and plants.jpg" alt="Beautiful home decor with plants">
+
+        <div class="about-text">
+            <h2>About Us</h2>
+
+            <p>
+                Welcome to Home & Gardening!
+                We share helpful gardening tips,
+                beautiful home decor ideas and
+                useful plant care guides.
+                Our goal is to make gardening and
+                home decoration simple and enjoyable.
+            </p>
+        </div>
 
     </section>
 
     <section class="mission">
-
         <h2>Our Mission</h2>
 
         <p>
             Our mission is to help people
             create beautiful homes and
             healthy green spaces.
+            We want to inspire everyone to
+            enjoy nature and make their homes
+            more comfortable and beautiful.
         </p>
-
     </section>
 
 </main>
 
-<footer>
-
-    <p>&copy; 2026 Home & Gardening</p>
-
-    <p>All Rights Reserved.</p>
-
-</footer>
+<footer class="site-footer"><div class="footer-main"><div class="footer-about"><a class="brand footer-brand" href="index.html"><span class="brand-mark">✿</span><span>Home <em>&</em> Gardening<small>GROW • DECORATE • ENJOY</small></span></a><p>Inspiring greener spaces and more beautiful homes with practical ideas anyone can enjoy.</p><div class="social-links"><a href="https://www.facebook.com/" aria-label="Facebook">f</a><a href="https://www.instagram.com/" aria-label="Instagram">◎</a><a href="https://www.pinterest.com/" aria-label="Pinterest">p</a></div></div><div class="footer-column"><h3>Explore</h3><a href="index.html">Home</a><a href="about.html">About Us</a><a href="blog.html">Our Blog</a><a href="contact.html">Contact Us</a></div><div class="footer-column"><h3>Categories</h3><a href="gardening-tips.html">Gardening Tips</a><a href="home-decor.html">Home Decor</a><a href="plant-care.html">Plant Care</a></div><div class="footer-column"><h3>Helpful Links</h3><a href="privacy-policy.html">Privacy Policy</a><a href="terms.html">Terms & Conditions</a><a href="sitemap.xml">Sitemap</a></div></div><div class="footer-bottom"><span>© 2026 Home & Gardening. All Rights Reserved.</span><span>Made with care for greener living <b>✿</b></span></div></footer>
 
 </body>
 </html>
