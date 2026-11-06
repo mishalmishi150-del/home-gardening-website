@@ -1,0 +1,50 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <url>
+        <loc>https://yourwebsite.com/index.html</loc>
+    </url>
+
+    <url>
+        <loc>https://yourwebsite.com/about.html</loc>
+    </url>
+
+    <url>
+        <loc>https://yourwebsite.com/blog.html</loc>
+    </url>
+
+    <url>
+        <loc>https://yourwebsite.com/contact.html</loc>
+    </url>
+
+    <url>
+        <loc>https://yourwebsite.com/privacy-policy.html</loc>
+    </url>
+
+    <url>
+        <loc>https://yourwebsite.com/terms.html</loc>
+    </url>
+
+    <url>
+        <loc>https://yourwebsite.com/articles/article1.html</loc>
+    </url>
+
+    <url>
+        <loc>https://yourwebsite.com/articles/article2.html</loc>
+    </url>
+
+    <url>
+        <loc>https://yourwebsite.com/articles/article3.html</loc>
+    </url>
+
+    <url>
+        <loc>https://yourwebsite.com/articles/article4.html</loc>
+    </url>
+
+    <url>
+        <loc>https://yourwebsite.com/articles/article5.html</loc>
+    </url>
+
+</urlset>
